@@ -1,0 +1,297 @@
+body {
+  background-color: #0b1d47;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #0b2a60;
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* FOTO PROFIL */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.profile-pic {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+.profile-name {
+  background-color: #e9edf3;
+  color: black;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 20px;
+  margin-top: 10px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+/* TEKS UTAMA */
+.content h2 {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* TOMBOL FOLLOW */
+.follow-btn {
+  background-color: #e9edf3;
+  color: #0b2a60;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.follow-btn:hover {
+  background-color: #cbd4e1;
+}
+
+/* NAV BAR */
+.nav-bar {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.nav-item {
+  background-color: #e9edf3;
+  color: #0b2a60;
+  font-size: 22px;
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 8px 18px;
+  transition: 0.3s;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+.nav-item:hover {
+  background-color: #cbd4e1;
+  transform: scale(1.1);
+}
+body {
+  background-color: #0b1d47;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #0b2a60;
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 420px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+/* HEADER ABOUT */
+.header {
+  text-align: left;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.header h2 {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.profile-top {
+  position: absolute;
+  top: 0;
+  right: 60px;
+  display: flex;
+  gap: 5px;
+}
+
+.top-pic {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid white;
+  object-fit: cover;
+}
+
+.stars {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 20px;
+}
+
+/* ISI TEKS */
+.content {
+  font-size: 13px;
+  line-height: 1.5;
+  margin-top: 60px;
+  text-align: justify;
+}
+
+/* NAVBAR */
+.nav-bar {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.nav-item {
+  background-color: #e9edf3;
+  color: #0b2a60;
+  font-size: 22px;
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 8px 18px;
+  transition: 0.3s;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nav-item:hover {
+  background-color: #cbd4e1;
+  transform: scale(1.1);
+}
+body {
+  background-color: #0b1d47;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #0b2a60;
+  padding: 30px;
+  border-radius: 20px;
+  width: 420px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-bar {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item {
+  background-color: #f0f0f0;
+  color: #0b2a60;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 10px 18px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.nav-item:hover {
+  background-color: #cbd4e1;
+  transform: scale(1.1);
+}
+/* === Halaman Skill === */
+.skills-page {
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0 10px 30px;
+  font-family: "Brush Script MT", cursive;
+}
+
+.skill-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto 30px;
+  border-radius: 15px;
+  padding: 15px 25px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.skill-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-box li {
+  margin: 6px 0;
+  font-size: 16px;
+}
+
+/* === Navigasi bawah === */
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 500px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  padding: 8px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.nav-item {
+  text-decoration: none;
+  font-size: 22px;
+  color: navy;
+  background-color: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: navy;
+  color: white;
+}
+
+.nav-item.active {
+  background-color: #0b3d91;
+  color: white;
+}

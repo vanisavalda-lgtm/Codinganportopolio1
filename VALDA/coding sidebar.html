@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Vanisa Keyla Revalda</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      background-color: #f0f4fa;
+      color: #0a1a44;
+    }
+
+    /* === Sidebar === */
+    .sidebar {
+      width: 250px;
+      background-color: #0a1a44;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 30px;
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      width: 100%;
+    }
+
+    .nav-links a {
+      display: block;
+      padding: 15px 30px;
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover, .nav-links a.active {
+      background-color: #1e3c88;
+      padding-left: 40px;
+    }
+
+    /* === Main Content === */
+    .content {
+      flex: 1;
+      padding: 50px;
+      overflow-y: auto;
+      transition: opacity 0.5s ease;
+    }
+
+    .content h1 {
+      color: #0a1a44;
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .content p {
+      font-size: 17px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* === Section Styling === */
+    .section {
+      display: none;
+      animation: fadeIn 0.6s ease;
+    }
+
+    .section.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* === Card Layouts === */
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    .skills-list li {
+      margin: 6px 0;
+      list-style: "⭐ ";
+    }
+
+    .contact-info p {
+      margin: 8px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>My Portfolio</h2>
+    <div class="nav-links">
+      <a href="#" class="active" onclick="showSection('home')">🏠 Home</a>
+      <a href="#" onclick="showSection('about')">👩 About Me</a>
+      <a href="#" onclick="showSection('experience')">💼 Experience</a>
+      <a href="#" onclick="showSection('skills')">⭐ Skills</a>
+      <a href="#" onclick="showSection('certificate')">📜 Certificate</a>
+      <a href="#" onclick="showSection('contact')">📞 Contact</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <!-- HOME -->
+    <div id="home" class="section active">
+      <h1>Hallo! 👋</h1>
+      <p>Selamat datang di portofolio digital saya. Saya <b>Vanisa Keyla Revalda</b>, siswa kelas <b>XI TKJ 2</b> di <b>SMKN 1 Nglegok</b>. Website ini berisi tentang perjalanan belajar, pengalaman, dan keterampilan saya di bidang teknologi komputer dan jaringan.</p>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about" class="section">
+      <h1>About Me</h1>
+      <div class="card">
+        <p>Saya adalah seseorang yang memiliki semangat tinggi untuk belajar hal baru di bidang teknologi informasi. Fokus saya adalah pada bidang jaringan komputer, pemrograman web, dan desain digital.</p>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div id="experience" class="section">
+      <h1>Experience</h1>
+      <div class="card">
+        <ul>
+          <li>Praktek Kerja Lapangan di Laboratorium Komputer SMKN 1 Nglegok</li>
+          <li>Mengikuti proyek instalasi jaringan LAN</li>
+          <li>Menjadi panitia lomba IT Networking Competition</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div id="skills" class="section">
+      <h1>Skills</h1>
+      <div class="card">
+        <h3>Hard Skills</h3>
+        <ul class="skills-list">
+          <li>Konfigurasi Jaringan LAN</li>
+          <li>Instalasi Sistem Operasi</li>
+          <li>Microsoft Office</li>
+          <li>Pemrograman Dasar (HTML, CSS, JS)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Soft Skills</h3>
+        <ul class="skills-list">
+          <li>Komunikasi Efektif</li>
+          <li>Kerja Sama Tim</li>
+          <li>Kreativitas</li>
+          <li>Manajemen Waktu</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CERTIFICATE -->
+    <div id="certificate" class="section">
+      <h1>Certificates</h1>
+      <div class="card">
+        <ul>
+          <li>Pelatihan Jaringan Komputer</li>
+          <li>Workshop Mikrotik</li>
+          <li>Pelatihan Desain Grafis</li>
+          <li>Pelatihan Cyber Security Dasar</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact" class="section">
+      <h1>Contact Me</h1>
+      <div class="card contact-info">
+        <p>📧 Email: <b>vanisa.revalda@example.com</b></p>
+        <p>📱 WhatsApp: <b>+62 812-3456-7890</b></p>
+        <p>📍 Lokasi: Blitar, Jawa Timur</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showSection(id) {
+      // sembunyikan semua section
+      document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+      // hapus active dari nav
+      document.querySelectorAll('.nav-links a').forEach(link => link.classList.remove('active'));
+      // tampilkan section sesuai id
+      document.getElementById(id).classList.add('active');
+      // aktifkan nav
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>
